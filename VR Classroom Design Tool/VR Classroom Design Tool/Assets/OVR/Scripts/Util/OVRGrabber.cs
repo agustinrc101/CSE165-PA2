@@ -164,8 +164,7 @@ public class OVRGrabber : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider otherCollider)
-    {
+    void OnTriggerEnter(Collider otherCollider){
         // Get the grab trigger
 		OVRGrabbable grabbable = otherCollider.GetComponent<OVRGrabbable>() ?? otherCollider.GetComponentInParent<OVRGrabbable>();
         if (grabbable == null) return;
@@ -176,8 +175,7 @@ public class OVRGrabber : MonoBehaviour
         m_grabCandidates[grabbable] = refCount + 1;
     }
 
-    void OnTriggerExit(Collider otherCollider)
-    {
+    void OnTriggerExit(Collider otherCollider){
 		OVRGrabbable grabbable = otherCollider.GetComponent<OVRGrabbable>() ?? otherCollider.GetComponentInParent<OVRGrabbable>();
         if (grabbable == null) return;
 
@@ -199,8 +197,7 @@ public class OVRGrabber : MonoBehaviour
         }
     }
 
-    protected void CheckForGrabOrRelease(float prevFlex)
-    {
+    protected void CheckForGrabOrRelease(float prevFlex){
         if ((m_prevFlex >= grabBegin) && (prevFlex < grabBegin))
         {
             GrabBegin();
@@ -211,8 +208,7 @@ public class OVRGrabber : MonoBehaviour
         }
     }
 
-    protected virtual void GrabBegin()
-    {
+    protected virtual void GrabBegin(){
         float closestMagSq = float.MaxValue;
 		OVRGrabbable closestGrabbable = null;
         Collider closestGrabbableCollider = null;
