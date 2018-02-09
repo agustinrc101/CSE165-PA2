@@ -5,6 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - Furniture
+  - watch
+  - right index
+  - UI Button
+  - UI Menu Button
+  - Floor
+  - UI CopyPaste
+  - saveLoad
+  - groupSelectionObject
+  - TapeMeasurer
   layers:
   - Default
   - TransparentFX
@@ -14,7 +23,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - CanvasButtons
   - 
   - 
   - 

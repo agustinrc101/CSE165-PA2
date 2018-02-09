@@ -1503,10 +1503,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4900634884326990}
   - component: {fileID: 54468962581588362}
+  - component: {fileID: 114266038095944832}
   - component: {fileID: 65881845984276594}
   m_Layer: 0
   m_Name: locker
-  m_TagString: Untagged
+  m_TagString: Furniture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4508,7 +4509,7 @@ Transform:
   m_GameObject: {fileID: 1672637726483908}
   m_LocalRotation: {x: 0.5, y: -0.5, z: -0.5, w: -0.5}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 4979531858424836}
   m_Father: {fileID: 0}
@@ -7849,3 +7850,14 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.12343076, y: 0.09892623, z: 0.70152277}
   m_Center: {x: 0.0045996658, y: -0.00024747849, z: -0.000008145968}
+--- !u!114 &114266038095944832
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1672637726483908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ec90be89adfb5648b889d6df3bb6ea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
